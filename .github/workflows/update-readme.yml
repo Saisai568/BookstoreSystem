@@ -1,44 +1,22 @@
-name: Auto Update README with User Activity
-
+name: Update GitHub Activity
 on:
   schedule:
-    - cron: "*/30 * * * *"   # 每 30 分鐘執行一次
+    - cron: "*/30 * * * *"  # Every 30 minutes
   workflow_dispatch:
-  push:
-    branches: ["main"]
-
-permissions:
-  contents: write
 
 jobs:
-  update-readme:
+  update-activity:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Fetch Recent Activity for User
-      run: |
-        USERNAME="saisai568" 
-        echo "<!--START_SECTION:activity-->" > activity.md
-        curl -s "https://api.github.com/users/$USERNAME/events" | \
-        jq -r '.[] | select(.type=="PushEvent" or .type=="PullRequestEvent") | "- \(.type): \(.repo.name)"' | head -n 5 >> activity.md
-        echo "<!--END_SECTION:activity-->" >> activity.md
-
-    - name: Update README section
-      run: |
-        awk '
-          /<!--START_SECTION:activity-->/ {print; system("cat activity.md"); skip=1; next}
-          /<!--END_SECTION:activity-->/ {skip=0}
-          !skip
-        ' README.md > README.tmp && mv README.tmp README.md
-
-    - name: Commit Changes
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "chore: auto-update activity section"
-        branch: main
-        commit_user_name: github-actions
-        commit_user_email: actions@github.com
-        token: ${{ secrets.REPO_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update GitHub Activity
+        uses: ggofri/github-activity-updater@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: saisai568
