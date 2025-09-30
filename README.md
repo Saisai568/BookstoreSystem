@@ -18,4 +18,4 @@ BookStore 是一個模擬線上書店的 Web 專案，目前正在開發購物�
 - 支援數量調整與刪除
 - 顯示總金額與 Checkout 按鈕
 
-對應 Issue：#1 `Implement Cart Page for BookStore`
+對應 Issue：#10 `Implement Cart Page for BookStore`
