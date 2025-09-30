@@ -7,7 +7,11 @@ BookStore 是一個模擬線上書店的 Web 專案，目前正在開發購物�
 ## 📦 Recent Development Activity
 
 <!--START_SECTION:activity-->
-(Waiting for first CI update...)
+- ✨ Created repository or branch [Saisai568/BookstoreSystem](https://github.com/Saisai568/BookstoreSystem) - Sep 29
+- ✨ Created repository or branch [Saisai568/BookstoreSystem](https://github.com/Saisai568/BookstoreSystem) - Sep 29
+- 🐛 Created/updated issue in [Saisai568/BookstoreSystem](https://github.com/Saisai568/BookstoreSystem) - Sep 29
+- 🚀 Pushed commits to [Saisai568/BounceBlitz](https://github.com/Saisai568/BounceBlitz) - Sep 25
+- 🚀 Pushed commits to [Saisai568/BounceBlitz](https://github.com/Saisai568/BounceBlitz) - Sep 25
 <!--END_SECTION:activity-->
 
 ---
