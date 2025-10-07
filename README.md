@@ -11,7 +11,7 @@ BookStore 是一個模擬線上書店的 Web 專案，目前正在開發購物�
 - 🚀 Pushed commits to [Saisai568/activity-log](https://github.com/Saisai568/activity-log) - Oct 06
 - 🚀 Pushed commits to [Saisai568/activity-log](https://github.com/Saisai568/activity-log) - Oct 06
 - 🚀 Pushed commits to [Saisai568/activity-log](https://github.com/Saisai568/activity-log) - Oct 06
-- 🍴 Forked [TheDanniCraft/activity-log](https://github.com/TheDanniCraft/activity-log) - Oct 01
+- 🚀 Pushed commits to [Saisai568/activity-log](https://github.com/Saisai568/activity-log) - Oct 06
 <!--END_SECTION:activity-->
 
 ---
